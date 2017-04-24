@@ -132,7 +132,7 @@ if ( ! function_exists( 'tribe_tickets_display_count_and_ticket_button' ) ) {
 		if ( ( $types['tickets']['count'] || $types['rsvp']['count'] ) && ( ! $types['tickets']['available'] && ! $types['rsvp']['available'] ) ) {
 
 			$stock  = '<span class="tribe-out-of-stock">' . esc_html_x( 'Out of stock!', 'list view stock sold out', 'event-tickets' ) . '</span>';
-			$button = '<button class="tribe-button">' . esc_html_x( 'Sold Out!', 'list view sold out', 'event-tickets' ) . '</button>';
+			$button = '<span class="tribe-button sold-out">' . esc_html_x( 'Sold Out!', 'list view sold out', 'event-tickets' ) . '</span>';
 
 			/**
 			 * Filter the ticket count and purchase button
